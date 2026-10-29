@@ -182,10 +182,10 @@ export default function Navbar() {
       {/* Mobile Menu Slide Drawer */}
       <div className={`md:hidden transition-all duration-200 ease-in-out ${isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`} id="mobile-menu">
         <div className="px-3 pt-2 pb-4 space-y-1 bg-slate-950 border-t border-slate-900/60 shadow-xl">
-          <Link href="#features" onClick={() => setIsOpen(false)} className="block text-base font-medium text-slate-400 hover:text-white hover:bg-slate-900/50 px-3 py-2.5 rounded-xl transition-colors">
+          <Link href="/features" onClick={() => setIsOpen(false)} className="block text-base font-medium text-slate-400 hover:text-white hover:bg-slate-900/50 px-3 py-2.5 rounded-xl transition-colors">
             Features
           </Link>
-          <Link href="#pricing" onClick={() => setIsOpen(false)} className="block text-base font-medium text-slate-400 hover:text-white hover:bg-slate-900/50 px-3 py-2.5 rounded-xl transition-colors">
+          <Link href="/pricing" onClick={() => setIsOpen(false)} className="block text-base font-medium text-slate-400 hover:text-white hover:bg-slate-900/50 px-3 py-2.5 rounded-xl transition-colors">
             Pricing
           </Link>
           <Link href="/dashboard" onClick={() => setIsOpen(false)} className="block text-base font-medium text-slate-400 hover:text-white hover:bg-slate-900/50 px-3 py-2.5 rounded-xl transition-colors">
@@ -216,3 +216,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
